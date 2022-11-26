@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0c9b66916d3cb44878a8ba67377d36, type: 3}
+  m_Name: ItemDictionary
+  m_EditorClassIdentifier: 
+  objList:
+  - {fileID: 11400000, guid: 3f37da94031ecdd4a90d61d444e0d36d, type: 2}
+  - {fileID: 11400000, guid: 0e3353c65e6fe6f40a316b99ce4b40d7, type: 2}
+  - {fileID: 11400000, guid: 0079b82bdfcb2a849ada22d3b4454960, type: 2}
+  nameList:
+  - bread
+  - wood
+  - boomerang
+  prefabs:
+  - {fileID: 6487641325831089005, guid: 7dfa65333510fb946a6d2950686d8f86, type: 3}
+  - {fileID: 2867281822526115017, guid: b9e9db0d8a88d81418cb278070ab7ef6, type: 3}
+  - {fileID: 5047711593686752290, guid: 555f39bc6c2468b4cb380d0cb919ebe7, type: 3}

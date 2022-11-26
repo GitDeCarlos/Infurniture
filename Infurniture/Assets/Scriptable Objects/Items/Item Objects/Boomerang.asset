@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f72975211cb3844a44d17948e9c793, type: 3}
+  m_Name: Boomerang
+  m_EditorClassIdentifier: 
+  inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
+  prefab: {fileID: 1512805290232710918, guid: 646227207bc3e034bbb61d39124b1bb6, type: 3}
+  description: A wooden boomerang that will sadly probably never make it into the
+    actual game :(
+  DisplayName: Boomerang
+  type: 0
+  defense: 0
+  attack: 10

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec8364929c613d4d80010c51029de45, type: 3}
+  m_Name: Wood
+  m_EditorClassIdentifier: 
+  inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
+  prefab: {fileID: 7944594968010154535, guid: 17cf759ffdcf4b4449975cac3fc03fe7, type: 3}
+  description: Wood. Material used for buiilding and crafting.
+  DisplayName: Wood
+  type: 2

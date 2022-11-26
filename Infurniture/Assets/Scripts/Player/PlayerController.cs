@@ -6,10 +6,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     float speed = 5;
-    public int health = 5;
 
     private Rigidbody2D rb;
     private Vector2 movement;
+
+    public int health = 10;
     
 
     // Start is called before the first frame update
@@ -32,14 +33,14 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
+        
     }
 
-    public void updateHealth(int change)
-    {
-        health += change;
-        if(health < 1)
-        {
-            //Player dies.
+    public void changeHealth(int val){
+        health += val;
+        if(health < 1){
+            Debug.Log("Player Died");
+            Destroy(this.gameObject);
         }
     }
 }
