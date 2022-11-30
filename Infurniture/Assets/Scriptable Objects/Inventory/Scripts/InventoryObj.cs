@@ -39,4 +39,11 @@ public class InventoryObj : ScriptableObject
             invList.Add(new InventoryItem(item, quantity));
         }
     }
+
+    public void removeItem(InventoryItem item){
+        int index = invList.IndexOf(item);
+        if(index != -1){
+            invList.Remove(item);
+        }
+    }
 }

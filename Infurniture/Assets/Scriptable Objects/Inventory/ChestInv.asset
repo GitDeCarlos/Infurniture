@@ -9,15 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bece67293ae26c499f3462a7fb8b652, type: 3}
-  m_Name: ZombieDrops
+  m_Script: {fileID: 11500000, guid: f8c07dc13b7124246bb8801b01b027b8, type: 3}
+  m_Name: ChestInv
   m_EditorClassIdentifier: 
-  itemDict: {fileID: 11400000, guid: 2214a5b127b03f84eb3f1258696cccc7, type: 2}
-  objList:
-  - bread
-  - boomerang
-  rates:
-  - 1
-  - 1
-  amountMin: 0100000002000000
-  amountMax: 0300000002000000
+  invList: []

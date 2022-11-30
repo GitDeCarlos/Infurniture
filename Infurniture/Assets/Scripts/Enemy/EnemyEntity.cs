@@ -29,6 +29,7 @@ public class EnemyEntity : MonoBehaviour
     }
 
     public void dropLoot(Vector2 position){
+        Debug.Log("Enemy Loot Drop");
         System.Random rnd = new System.Random();
         for(int i = 0; i < dropList.objList.Count; i++){
             if(rnd.NextDouble() <= dropList.rates[i]){
@@ -37,6 +38,7 @@ public class EnemyEntity : MonoBehaviour
                 if(index != -1){
                     GameObject prefab = dropList.itemDict.prefabs[index];
                     for(int x = 0; x < dropCount; x++){
+                        Debug.Log("Item Dropped");
                         Vector2 offset = new Vector2((float) (2*(rnd.NextDouble()-0.5)), (float) (2*(rnd.NextDouble()-0.5)));
                         Instantiate(prefab, position+offset, Quaternion.identity);
                     }
