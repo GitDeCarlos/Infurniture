@@ -136,3 +136,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  dropList: {fileID: 11400000, guid: 09664eface294a34b93ebc7d3b01c2c2, type: 2}
