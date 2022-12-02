@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
+    public Animator animator;
 
     public int health = 10;
     
@@ -25,6 +26,9 @@ public class PlayerController : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
         rb.MovePosition(rb.position + movement.normalized * speed * Time.deltaTime);
 
+        animator.SetFloat("Speed",movement.sqrMagnitude);
+
+
         if (movement.x < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
@@ -34,6 +38,10 @@ public class PlayerController : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
         }
         
+    }
+
+    public void OnFire(){
+        animator.SetTrigger("meleeAttack");
     }
 
     public void changeHealth(int val){
