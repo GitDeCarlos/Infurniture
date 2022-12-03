@@ -12,7 +12,7 @@ public class InventoryCanvas : MonoBehaviour
     void Update()
     {
         inventoryPanel.SetActive(isShowing);
-        if (Input.GetKeyDown("e")) {
+        if (Input.GetKeyDown("i")) {
             isShowing = !isShowing;
             //canvas.SetActive(isShowing);
             //print("button was pressed");
