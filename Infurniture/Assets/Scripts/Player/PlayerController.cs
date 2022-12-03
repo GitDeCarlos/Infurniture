@@ -10,12 +10,15 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     public Animator animator;
+    public HealthBar healthBar;
+    public HealthBar hungerBar;
 
     public int maxHealth = 100;
     public int currentHealth;
+    public int maxHunger = 100;
+    public int currentHunger;
 
-    public HealthBar healthBar;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,9 @@ public class PlayerController : MonoBehaviour
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        currentHunger = maxHunger;
+        hungerBar.SetMaxHealth(maxHunger);
     }
 
     void Update()
