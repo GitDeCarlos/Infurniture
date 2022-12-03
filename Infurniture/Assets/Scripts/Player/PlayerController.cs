@@ -11,13 +11,27 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     public Animator animator;
 
-    public int health = 10;
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBar healthBar;
     
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            takeDamage(20);
+        }
     }
 
     private void FixedUpdate()
@@ -36,19 +50,30 @@ public class PlayerController : MonoBehaviour
         else if (movement.x > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
-        }
+        } 
         
+    }
+
+    public void takeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 
     public void OnFire(){
         animator.SetTrigger("meleeAttack");
     }
 
-    public void changeHealth(int val){
+
+
+
+/*    
+    *public void changeHealth(int val){
         health += val;
         if(health < 1){
             Debug.Log("Player Died");
             Destroy(this.gameObject);
         }
     }
+*/
 }
