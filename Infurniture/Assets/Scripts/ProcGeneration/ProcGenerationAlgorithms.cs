@@ -59,7 +59,7 @@ public static class ProceduralGenerationAlgorithms
       var xSplit = Random.Range(1, room.size.x);
       BoundsInt room1 = new BoundsInt(room.min, new Vector3Int(xSplit, room.size.y, room.size.z));
       BoundsInt room2 = new BoundsInt(new Vector3Int(room.min.x + xSplit, room.min.y, room.min.z), new Vector3Int(room.size.x - xSplit, room.size.y, room.size.z));
-
+      
       roomsQueue.Enqueue(room1);
       roomsQueue.Enqueue(room2);
    }
@@ -79,7 +79,7 @@ public static class ProceduralGenerationAlgorithms
 // gets random direction
 public static class Direction2D
 {
-   public static List<Vector2Int> cardinalDirectionsList = new List<Vector2Int>
+   public static List<Vector2Int> eightDirectionsList = new List<Vector2Int>
    {
       new Vector2Int(0,1), // up direction
       new Vector2Int(1,0), // right direction
@@ -91,8 +91,8 @@ public static class Direction2D
       new Vector2Int(-1,-1) // bottom left (southwest)
    };
 
-   public static Vector2Int GetRandomCardinalDirection()
-   {
-      return cardinalDirectionsList[Random.Range(0, cardinalDirectionsList.Count)];
-   }
+   // public static Vector2Int GetRandomCardinalDirection()
+   // {
+   //    return eightDirectionsList[Random.Range(0, eightDirectionsList.Count)];
+   // }
 }

@@ -84,10 +84,10 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
       var up = position + Vector2Int.up;
       var down = position + Vector2Int.down;
       corridor.Add(position);
-      corridor.Add(left); //add left, right, up, and down positions to increase hallway size
-      corridor.Add(right);
-      corridor.Add(up);
-      corridor.Add(down);
+      // corridor.Add(left); //add left, right, up, and down positions to increase hallway size
+      // corridor.Add(right);
+      // corridor.Add(up);
+      // corridor.Add(down);
 
       while(position.y != destination.y)
       {
@@ -102,10 +102,13 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
             position += Vector2Int.down;
             left += Vector2Int.down;
             right += Vector2Int.down;
+
          }
-         corridor.Add(position);
-         corridor.Add(left);
-         corridor.Add(right);
+         HashSet<Vector2Int> hallway = IncreaseHallway(position, "vertical", 3);
+         corridor.UnionWith(hallway);
+         // corridor.Add(position);
+         // corridor.Add(left);
+         // corridor.Add(right);
       }
 
       while(position.x != destination.x)
@@ -124,47 +127,47 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
             up += Vector2Int.left;
             down += Vector2Int.left;
          }
-         corridor.Add(position);
-         corridor.Add(up);
-         corridor.Add(down);
+         HashSet<Vector2Int> hallway = IncreaseHallway(position, "horizontal", 3);
+         corridor.UnionWith(hallway);
+         // corridor.Add(position);
+         // corridor.Add(up);
+         // corridor.Add(down);
       }
 
       return corridor;
    }
 
-   //still working on this, Vector2Int(0,i) cant be used like a function lol
-   // private HashSet<Vector2Int> IncreaseHallway(Vector2Int position, int direction, int desiredWidth)
-   // {
-   //    HashSet<Vector2Int> hallwayPositions = new HashSet<Vector2Int>();
-   //    hallwayPositions.Add(position);
-   //    int toIncrease = (desiredWidth - 1) / 2;
+   private HashSet<Vector2Int> IncreaseHallway(Vector2Int position, string direction, int desiredWidth)
+   {
+      //for each position, add appropriate tiles to increase width of hallways
+      HashSet<Vector2Int> hallwayPositions = new HashSet<Vector2Int>();
+      int toIncrease = (desiredWidth - 1) / 2;
 
-   //    if(direction == 0) //vertical hallway
-   //    {
-   //       //add extra spots to left and right
-   //       for(int i=1; i<toIncrease+1; i++)
-   //       {
-   //          var left = position + Vector2Int(-i,0);
-   //          var right = position + Vector2Int(i,0);
-   //          hallwayPositions.Add(left);
-   //          hallwayPositions.Add(right);
-   //       }
-   //    }
+      hallwayPositions.Add(position);
 
-   //    else //horizontal hallway
-   //    {
-   //       //add extra spots in up and down direction
-   //       for(int i=1; i<toIncrease; i++)
-   //       {
-   //          var up = position + Vector2Int(0, i);
-   //          var down = position + Vector2Int(0, -i);
-   //          hallwayPositions.Add(up);
-   //          hallwayPositions.Add(down);
-   //       }
-   //    }
+      List<Vector2Int> directions = Direction2D.eightDirectionsList;
+      foreach(var d in directions)
+      {
+         hallwayPositions.Add(position + d);
+      }
 
-   //    return hallwayPositions;
-   // }
+      // if(direction == "vertical")
+      // {
+      //    var left = position + Vector2Int.left;
+      //    var right = position + Vector2Int.right;
+      //    hallwayPositions.Add(left);
+      //    hallwayPositions.Add(right);
+      // }
+      // else //horizontal
+      // {
+      //    var up = position + Vector2Int.up;
+      //    var down = position + Vector2Int.down;
+      //    hallwayPositions.Add(up);
+      //    hallwayPositions.Add(down);
+      // }
+
+      return hallwayPositions;
+   } 
 
    private HashSet<Vector2Int> CreateSimpleRooms(List<BoundsInt> roomsList)
    {
