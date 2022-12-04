@@ -1644,6 +1644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventoryCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3640695184407211863, guid: 7b26fae1ab8c6c943a1a57396593aa7f, type: 3}
+      propertyPath: inventorySlotPrefab
+      value: 
+      objectReference: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b26fae1ab8c6c943a1a57396593aa7f, type: 3}
 --- !u!1 &1965262028 stripped
