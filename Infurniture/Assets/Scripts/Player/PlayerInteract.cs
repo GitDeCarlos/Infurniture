@@ -15,6 +15,7 @@ public class PlayerInteract : MonoBehaviour
    {
       if(Input.GetButtonDown("Interact") && currentInteractableObj) // editted Input Manager
       {
+         Debug.Log("Interacted");
          // do something with the object, can change/add other scenarios
          currentInteractableObj.SendMessage("DoInteraction");
       }

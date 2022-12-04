@@ -142,7 +142,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3640695184407211865}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -152,8 +152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -343.72534, y: 3.5681152}
-  m_SizeDelta: {x: -687.4504, y: -92.7701}
+  m_AnchoredPosition: {x: -580.73, y: -0.0009765625}
+  m_SizeDelta: {x: -1209.3, y: -73.379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3640695184407211861
 CanvasRenderer:
@@ -205,9 +205,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2db97ca48008ec42abb698cf1b21bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventorySlotPrefab: {fileID: 0}
   inventory: {fileID: 11400000, guid: c53f25ccfb1f6e74e9504d9c5c91fdb2, type: 2}
   x_space: 20
   x_start: -2
   y_start: 108
   columns: 1
   y_space: 35
+  prevCount: 0
