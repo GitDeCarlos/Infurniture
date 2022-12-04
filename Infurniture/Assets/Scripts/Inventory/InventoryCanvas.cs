@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InventoryCanvas : MonoBehaviour
 {
-    public GameObject inventoryPanel;
+     public GameObject inventoryPanel;
      public bool isShowing = false;
 
     
@@ -17,5 +17,7 @@ public class InventoryCanvas : MonoBehaviour
             //canvas.SetActive(isShowing);
             //print("button was pressed");
         }
+        
     }
+
 }

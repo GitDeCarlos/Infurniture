@@ -10,7 +10,7 @@ public class chest : MonoBehaviour
         //INSERT CODE TO OPEN CHEST UI
     }
 
-    public void insertIntoChest(ItemObj item, int quantity){
+    public void insertIntoChest(Item item, int quantity){
         chestInv.addItem(item, quantity);
     }
 
