@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 228569886656945268, guid: 6750062af2092714b97189573f80a2cd, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 228569886656945269, guid: 6750062af2092714b97189573f80a2cd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -854,6 +858,10 @@ PrefabInstance:
     - target: {fileID: 2248411006227398479, guid: 4d26c9f968dcd0644aebc57d928856d7, type: 3}
       propertyPath: m_Name
       value: Enemy_Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248411006227398479, guid: 4d26c9f968dcd0644aebc57d928856d7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2476281892571518170, guid: 4d26c9f968dcd0644aebc57d928856d7, type: 3}
       propertyPath: m_SortingOrder

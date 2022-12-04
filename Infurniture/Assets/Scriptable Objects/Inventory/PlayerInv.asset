@@ -15,34 +15,6 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: a07c3dbd4aab9d8418e46c58edc126a0, type: 2}
   invList:
     Items:
-    - ID: 0
-      item:
-        Name: Wood
-        Id: 0
-        type: 2
-        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
-      quantity: 3
-    - ID: 1
-      item:
-        Name: Bread
-        Id: 1
-        type: 1
-        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
-      quantity: 2
-    - ID: 2
-      item:
-        Name: Boomerang
-        Id: 2
-        type: 0
-        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
-      quantity: 1
-    - ID: 2
-      item:
-        Name: Boomerang
-        Id: 2
-        type: 0
-        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
-      quantity: 1
     - ID: -1
       item:
         Name: 
@@ -155,3 +127,32 @@ MonoBehaviour:
         type: 0
         inventorySlotPrefab: {fileID: 0}
       quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+  currSelected: 0

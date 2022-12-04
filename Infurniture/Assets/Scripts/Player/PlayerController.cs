@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public HealthBar healthBar;
     public HungerBar hungerBar;
-
+    
     public float maxHealth = 100f;
     public float currentHealth;
     public float hunger;
@@ -83,16 +83,18 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("meleeAttack");
     }
 
+    
 
 
 
-/*    
-    *public void changeHealth(int val){
-        health += val;
-        if(health < 1){
-            Debug.Log("Player Died");
-            Destroy(this.gameObject);
+
+    /*    
+        public void changeHealth(int val){
+            health += val;
+            if(health < 1){
+                Debug.Log("Player Died");
+                Destroy(this.gameObject);
+            }
         }
-    }
-*/
+    */
 }

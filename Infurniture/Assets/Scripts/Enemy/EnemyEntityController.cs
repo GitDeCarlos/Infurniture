@@ -40,9 +40,19 @@ public class EnemyEntityController : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
-        }
-        else{
+        }else{
+            //agent.Stop();
             animator.SetFloat("velocity", 0);
+        }
+        
+    }
+
+    public void OnCollisionEnter2D(Collision2D obj)
+    {
+        if (obj.gameObject.tag == "Player")//obj.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Player Damaged");
+            playerObject.GetComponent<PlayerController>().takeDamage(30);
         }
     }
 }
