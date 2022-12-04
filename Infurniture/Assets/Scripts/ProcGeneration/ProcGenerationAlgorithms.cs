@@ -84,7 +84,11 @@ public static class Direction2D
       new Vector2Int(0,1), // up direction
       new Vector2Int(1,0), // right direction
       new Vector2Int(0,-1), // down direction
-      new Vector2Int(-1,0) //left direction
+      new Vector2Int(-1,0), //left direction
+      new Vector2Int(1,1), // top right direction (northeast)
+      new Vector2Int(1,-1), // bottom right direction (southeast)
+      new Vector2Int(-1,1), // top left (northwest)
+      new Vector2Int(-1,-1) // bottom left (southwest)
    };
 
    public static Vector2Int GetRandomCardinalDirection()

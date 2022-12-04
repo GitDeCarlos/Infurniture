@@ -84,7 +84,7 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
       var up = position + Vector2Int.up;
       var down = position + Vector2Int.down;
       corridor.Add(position);
-      corridor.Add(left);
+      corridor.Add(left); //add left, right, up, and down positions to increase hallway size
       corridor.Add(right);
       corridor.Add(up);
       corridor.Add(down);
@@ -110,6 +110,8 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
 
       while(position.x != destination.x)
       {
+         up = position + Vector2Int.up; //reset up & down positions
+         down = position + Vector2Int.down;
          if(destination.x > position.x)
          {
             position += Vector2Int.right;
@@ -129,6 +131,40 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
 
       return corridor;
    }
+
+   //still working on this, Vector2Int(0,i) cant be used like a function lol
+   // private HashSet<Vector2Int> IncreaseHallway(Vector2Int position, int direction, int desiredWidth)
+   // {
+   //    HashSet<Vector2Int> hallwayPositions = new HashSet<Vector2Int>();
+   //    hallwayPositions.Add(position);
+   //    int toIncrease = (desiredWidth - 1) / 2;
+
+   //    if(direction == 0) //vertical hallway
+   //    {
+   //       //add extra spots to left and right
+   //       for(int i=1; i<toIncrease+1; i++)
+   //       {
+   //          var left = position + Vector2Int(-i,0);
+   //          var right = position + Vector2Int(i,0);
+   //          hallwayPositions.Add(left);
+   //          hallwayPositions.Add(right);
+   //       }
+   //    }
+
+   //    else //horizontal hallway
+   //    {
+   //       //add extra spots in up and down direction
+   //       for(int i=1; i<toIncrease; i++)
+   //       {
+   //          var up = position + Vector2Int(0, i);
+   //          var down = position + Vector2Int(0, -i);
+   //          hallwayPositions.Add(up);
+   //          hallwayPositions.Add(down);
+   //       }
+   //    }
+
+   //    return hallwayPositions;
+   // }
 
    private HashSet<Vector2Int> CreateSimpleRooms(List<BoundsInt> roomsList)
    {
