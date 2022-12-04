@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+<<<<<<< HEAD
 --- !u!50 &8426860765386323687
 Rigidbody2D:
   serializedVersion: 4
@@ -185,4 +186,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21985412, y: 0.4388678}
   m_EdgeRadius: 0
+=======
   dropList: {fileID: 11400000, guid: 09664eface294a34b93ebc7d3b01c2c2, type: 2}
+>>>>>>> further-inventory
