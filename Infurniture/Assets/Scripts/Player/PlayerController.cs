@@ -11,12 +11,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     public Animator animator;
     public HealthBar healthBar;
-    public HealthBar hungerBar;
+    public HungerBar hungerBar;
 
     public int maxHealth = 100;
     public int currentHealth;
-    public int maxHunger = 100;
-    public int currentHunger;
+    public float hunger;
+    float maxHunger = 100f;
 
 
 
@@ -28,15 +28,27 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
-        currentHunger = maxHunger;
-        hungerBar.SetMaxHealth(maxHunger);
+        hunger = maxHunger;
+        hungerBar.SetMaxHunger(maxHunger);
     }
 
     void Update()
     {
+        //HEALTH/DAMAGE
         if (Input.GetKeyDown(KeyCode.Space))
         {
             takeDamage(20);
+        }
+
+        //HUNGER BAR
+        if (hunger >= 0)
+        {
+            hunger -= 5f * Time.deltaTime;
+            hungerBar.SetHunger(hunger);
+        }
+        else if (hunger <= 0)
+        {
+            takeDamage(1);
         }
     }
 
