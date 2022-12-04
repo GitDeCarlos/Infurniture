@@ -13,10 +13,10 @@ public class PlayerController : MonoBehaviour
     public HealthBar healthBar;
     public HungerBar hungerBar;
 
-    public int maxHealth = 100;
-    public int currentHealth;
+    public float maxHealth = 100f;
+    public float currentHealth;
     public float hunger;
-    float maxHunger = 100f;
+    public float maxHunger = 100f;
 
 
 
@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (hunger <= 0)
         {
-            takeDamage(1);
+            currentHealth -= 1f * Time.deltaTime;
+            healthBar.SetHealth(currentHealth);
         }
     }
 
