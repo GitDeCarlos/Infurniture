@@ -12,12 +12,146 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c07dc13b7124246bb8801b01b027b8, type: 3}
   m_Name: PlayerInv
   m_EditorClassIdentifier: 
+  database: {fileID: 11400000, guid: a07c3dbd4aab9d8418e46c58edc126a0, type: 2}
   invList:
-  - item: {fileID: 11400000, guid: 0e3353c65e6fe6f40a316b99ce4b40d7, type: 2}
-    quantity: 3
-  - item: {fileID: 11400000, guid: 0079b82bdfcb2a849ada22d3b4454960, type: 2}
-    quantity: 1
-  - item: {fileID: 11400000, guid: 3f37da94031ecdd4a90d61d444e0d36d, type: 2}
-    quantity: 2
-  - item: {fileID: 11400000, guid: 0079b82bdfcb2a849ada22d3b4454960, type: 2}
-    quantity: 1
+    Items:
+    - ID: 0
+      item:
+        Name: Wood
+        Id: 0
+        type: 2
+        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
+      quantity: 3
+    - ID: 1
+      item:
+        Name: Bread
+        Id: 1
+        type: 1
+        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
+      quantity: 2
+    - ID: 2
+      item:
+        Name: Boomerang
+        Id: 2
+        type: 0
+        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
+      quantity: 1
+    - ID: 2
+      item:
+        Name: Boomerang
+        Id: 2
+        type: 0
+        inventorySlotPrefab: {fileID: 3591754564594916692, guid: 1301e7b99ee2ae04088aa7a5b2487155, type: 3}
+      quantity: 1
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0
+    - ID: -1
+      item:
+        Name: 
+        Id: 0
+        type: 0
+        inventorySlotPrefab: {fileID: 0}
+      quantity: 0

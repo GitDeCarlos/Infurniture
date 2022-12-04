@@ -15,7 +15,7 @@ MonoBehaviour:
   objList:
   - {fileID: 11400000, guid: 3f37da94031ecdd4a90d61d444e0d36d, type: 2}
   - {fileID: 11400000, guid: 0e3353c65e6fe6f40a316b99ce4b40d7, type: 2}
-  - {fileID: 11400000, guid: 0079b82bdfcb2a849ada22d3b4454960, type: 2}
+  - {fileID: 11400000, guid: 01a5aed0ecd2c324bb70cf3701ff5547, type: 2}
   nameList:
   - bread
   - wood
