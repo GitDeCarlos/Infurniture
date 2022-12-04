@@ -11,7 +11,8 @@ public class EnemyEntity : MonoBehaviour
 
     void Start(){
         entityTransform = GetComponent<Transform>();
-        killEnemy(this.gameObject);
+        //Used to test drops
+        //killEnemy(this.gameObject);
     }
 
     public void changeHealth(int val){
