@@ -15,10 +15,10 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
 
    protected override void RunProceduralGeneration()
    {
-      CreateRooms();
+      //CreateRooms(this.startPosition);
    }
 
-   private void CreateRooms()
+   public void CreateRooms(Vector2Int startPosition)
    {
       var roomsList = ProceduralGenerationAlgorithms.BinarySpacePartitioning(new BoundsInt((Vector3Int)startPosition, new Vector3Int(gridWidth, gridHeight, 0)), minRoomWidth, minRoomHeight);
 
@@ -32,9 +32,11 @@ public class RoomFirstGenerator : AbstractLayoutGenerator
       }
 
       HashSet<Vector2Int> corridors = ConnectRooms(roomCenters);
-      floor.UnionWith(corridors);
 
+      tilemapVisualizer.PaintCorridorTiles(corridors);
       tilemapVisualizer.PaintFloorTiles(floor);
+
+      floor.UnionWith(corridors);
       WallGenerator.CreateWalls(floor, tilemapVisualizer);
    }
 
