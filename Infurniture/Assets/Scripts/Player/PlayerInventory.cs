@@ -9,7 +9,7 @@ public class PlayerInventory : MonoBehaviour
     public InventoryObj inv;
 
     public void OnTriggerEnter2D(Collider2D obj){
-        if(!obj.CompareTag("interactableObject")){
+        if(obj.CompareTag("groundItem")){
             var item = obj.GetComponent<GroundItem>();
             Debug.Log(item.Item);
             if(item != null){

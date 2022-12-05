@@ -6,6 +6,7 @@ TagManager:
   tags:
   - interactableObject
   - Enemy
+  - groundItem
   layers:
   - Default
   - TransparentFX
