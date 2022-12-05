@@ -1923,7 +1923,7 @@ GameObject:
   - component: {fileID: 1535780023}
   - component: {fileID: 1535780022}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Player HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2710,6 +2710,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 228569886656945290, guid: 6750062af2092714b97189573f80a2cd, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1612843227}
+    - target: {fileID: 228569886656945290, guid: 6750062af2092714b97189573f80a2cd, type: 3}
+      propertyPath: hungerBar
+      value: 
+      objectReference: {fileID: 171247882}
     - target: {fileID: 228569886656945291, guid: 6750062af2092714b97189573f80a2cd, type: 3}
       propertyPath: m_IsTrigger
       value: 0

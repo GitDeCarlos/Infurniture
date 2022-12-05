@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //HEALTH/DAMAGE
+        //HEALTH/DAMAGE currently takes damage when space bar is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
             takeDamage(20);
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         //HUNGER BAR
         if (hunger >= 0)
         {
-            hunger -= 5f * Time.deltaTime;
+            hunger -= 2f * Time.deltaTime;
             hungerBar.SetHunger(hunger);
         }
         else if (hunger <= 0)
